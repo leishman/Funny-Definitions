@@ -34,8 +34,8 @@
 }
 
 - (IBAction)buttonPressed:(id)sender {
-    
-    
-    self.definitionLabel.text = [self.definitionArray objectAtIndex:1];
+    //arc4random  returns random integer value 'index'
+    NSUInteger index = arc4random_uniform(self.definitionArray.count);
+    self.definitionLabel.text = [self.definitionArray objectAtIndex:index];
 }
 @end
