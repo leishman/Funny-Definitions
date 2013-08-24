@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController {
+    NSArray *definitionArray;
+}
 
 - (IBAction)buttonPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *definitionLabel;

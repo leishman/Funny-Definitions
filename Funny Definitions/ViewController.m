@@ -18,6 +18,11 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    definitionArray = [[NSArray alloc] initWithObjects:@"shuttlecock",
+                                @"test",
+                                @"iFinger",nil];
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -28,9 +33,7 @@
 
 - (IBAction)buttonPressed:(id)sender {
     
-    NSArray *definitionArray = [[NSArray alloc] initWithObjects:@"shuttlecock",
-                        @"test",
-                        @"iFinger",nil];
+    
     self.definitionLabel.text = [definitionArray objectAtIndex:1];
 }
 @end
