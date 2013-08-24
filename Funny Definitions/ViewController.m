@@ -13,13 +13,15 @@
 @end
 
 @implementation ViewController
+@synthesize definitionLabel;
+@synthesize definitionArray;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
-    definitionArray = [[NSArray alloc] initWithObjects:@"shuttlecock",
+    self.definitionArray = [[NSArray alloc] initWithObjects:@"shuttlecock",
                                 @"test",
                                 @"iFinger",nil];
     
@@ -34,6 +36,6 @@
 - (IBAction)buttonPressed:(id)sender {
     
     
-    self.definitionLabel.text = [definitionArray objectAtIndex:1];
+    self.definitionLabel.text = [self.definitionArray objectAtIndex:1];
 }
 @end

@@ -9,10 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController {
-    NSArray *definitionArray;
 }
 
-- (IBAction)buttonPressed:(id)sender;
 @property (strong, nonatomic) IBOutlet UILabel *definitionLabel;
+@property (strong, nonatomic) NSArray *definitionArray;
+- (IBAction)buttonPressed:(id)sender;
 
 @end
