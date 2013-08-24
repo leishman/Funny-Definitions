@@ -27,6 +27,10 @@
 }
 
 - (IBAction)buttonPressed:(id)sender {
-    self.definitionLabel.text = @"this is your def";
+    
+    NSArray *definitionArray = [[NSArray alloc] initWithObjects:@"shuttlecock",
+                        @"test",
+                        @"iFinger",nil];
+    self.definitionLabel.text = [definitionArray objectAtIndex:1];
 }
 @end
